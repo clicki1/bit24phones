@@ -1,4 +1,4 @@
-FROM php:8.2-fpm
+FROM php:8.1-fpm
 
 RUN apt-get update && apt-get install -y \
       apt-utils \
@@ -16,8 +16,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY ./_docker/app/php.ini /usr/local/etc/php/conf.d/php.ini
 
-#Installing node 20.x
-RUN curl -sL https://deb.nodesource.com/setup_20.x| bash -
+#Installing node 12.x
+RUN curl -sL https://deb.nodesource.com/setup_18.x| bash -
 RUN apt-get install -y nodejs
 
 # Install composer

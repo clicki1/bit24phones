@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(bitb24.ru www.bitb24.ru)
+domains=(number.kalinin-oleg.ru www.number.kalinin-oleg.ru)
 rsa_key_size=4096
 data_path="./_docker/certbot"
 email="ajryabov@gmail.com" # Adding a valid address is strongly recommended
